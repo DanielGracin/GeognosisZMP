@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="./IMG/Geognosis_Favicon.svg">
+    <link rel="stylesheet" href="./CSS/login-register.css">
+    <title>Geognósis - Registrace</title>
+</head>
+<body>
+
+    <header class="header"> 
+        <a href="index.html">
+         <img src="./IMG/Geognosis logo.svg" class="logo">
+        </a>
+        <nav class="navbar">
+            <a href="index.html">Úvod</a>
+            <a href="project.html">O projektu</a>
+            <a href="history.html">Historie</a>
+            <a href="contact.html">Kontakt</a>
+            <a href="login.html">Přihlásit se</a>
+        </nav>
+    </header>
+
+    <main>
+    <div class="wrapper">
+        <form action="register.html" method="POST">
+            <h2>Registrace</h2>
+            <div class="input-field">
+                <input type="text" required name="name" id="name">
+                <label for="name">Zadejte Vaše jméno</label>
+            </div>
+            <div class="input-field">
+                <input type="text" required name="lastname" id="lastname">
+                <label for="lastname">Zadejte Vaše příjmení</label>
+            </div>
+            <div class="input-field">
+                <input type="email" required name="email" id="email">
+                <label for="email">Zadejte Váš email</label>
+            </div>
+            <div class="input-field">
+                <input type="password" required name="password" id="password">
+                <label for="password">Zadejte Vaše heslo</label>
+            </div>
+            <button type="submit">Registrovat se</button>
+            <div class="register">
+                <p>Už mám účet?
+                    <a href="login.html">Přihlásit se</a>
+                </p>
+            </div>
+        </form>
+    </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer-text">© 2024/2025 Daniel Gracin | Maturitní projekt</p>
+    </footer>
+</body>
+</html>
