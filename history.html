@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="./IMG/Geognosis_Favicon.svg">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <title>Geognósis - Historie</title>
+</head>
+<body>
+    <header class="header"> 
+        <a href="index.html">
+         <img src="./IMG/Geognosis logo.svg" class="logo">
+        </a>
+        <nav class="navbar">
+            <a href="index.html">Úvod</a>
+            <a href="project.html">O projektu</a>
+            <a href="history.html">Historie</a>
+            <a href="contact.html">Kontakt</a>
+            <a href="login.html">Přihlásit se</a>
+        </nav>
+    </header>
+    
+    
+      
+      <div id="MEZOPOTAMIE" class="tabcontent">
+        <h1 class="main-text">MEZOPOTÁMIE</h1>
+        <a href="./HISTORY/mezopotamie.html" class="history-button">Zápisky zde</a>
+      </div>
+
+      <div id="EGYPT" class="tabcontent">
+        <h1 class="main-text">EGYPT</h1>
+        <a href="./HISTORY/egypt.html" class="history-button">Zápisky zde</a>
+      </div>
+      
+      <div id="PERSIE" class="tabcontent">
+        <h1 class="main-text">PERSIE</h1>
+        <a href="./HISTORY/persia.html" class="history-button">Zápisky zde</a>
+      </div>
+
+      <div id="GREECE" class="tabcontent">
+        <h1 class="main-text">ŘECKO</h1>
+        <a href="./HISTORY/greece.html" class="history-button">Zápisky zde</a>
+      </div>
+
+      <div id="ROME" class="tabcontent">
+        <h1 class="main-text">ŘÍM</h1>
+        <a href="./HISTORY/rome.html" class="history-button">Zápisky zde</a>
+      </div>
+      
+      
+      <button class="tablink" onclick="openCity('MEZOPOTAMIE', this, 'rgba(255, 222, 89, 255)')" id="defaultOpen">MEZOPOTÁMIE</button>
+      <button class="tablink" onclick="openCity('EGYPT', this, 'rgba(255, 222, 89, 255)')">EGYPT</button>
+      <button class="tablink" onclick="openCity('PERSIE', this, 'rgba(255, 222, 89, 255)')">PERSIE</button>
+      <button class="tablink" onclick="openCity('GREECE', this, 'rgba(255, 222, 89, 255)')">ŘECKO</button>
+      <button class="tablink" onclick="openCity('ROME', this, 'rgba(255, 222, 89, 255)')">ŘÍM</button>
+
+      <script>
+     function openCity(cityName, elmnt, color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+  document.getElementById(cityName).style.display = "block";
+
+  elmnt.style.backgroundColor = color;
+}
+
+document.getElementById("defaultOpen").click();
+      </script>
+
+    <div class="space">Oddělovač</div>
+
+    <footer class="footer">
+        <p class="footer-text">© 2024/2025 Daniel Gracin | Maturitní projekt</p>
+    </footer>
+</body>
+</html>
